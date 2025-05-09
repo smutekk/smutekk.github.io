@@ -1,0 +1,46 @@
+
+import React from "react";
+
+import Head from "next/head";
+import BackgroundImage from "./lain.png";
+import Image from "next/image";
+
+
+import { Geist, Geist_Mono } from "next/font/google";
+
+import styles from "@/styles/Home.module.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+import Blur from 'react-css-blur'
+
+export default function main() {
+    
+  return (
+    <div className="background">
+      <Image
+        src={BackgroundImage}
+        alt="bg"
+        fill={true}
+        layout="fill"
+        sizes="100vw"
+        style={{
+          objectFit: "cover",
+          objectPosition: "center",
+          width: "100%",
+          height: "100%"
+        }}
+        priority
+      />
+    </div>
+    
+  );
+}
