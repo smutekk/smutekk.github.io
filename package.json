@@ -1,7 +1,7 @@
 {
   "name": "gitweb",
   "version": "0.1.0",
-  "homepage": "https://smutekk.github.io/index",
+  "homepage": "https://smutekk.github.io/meow",
   "private": true,
   "scripts": {
     "dev": "next dev",
